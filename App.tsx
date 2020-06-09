@@ -1,15 +1,15 @@
 import React from 'react';
-import {View, Text} from 'react-native';
+import Header from './components/atoms/Header';
+import TabNavigator from './components/atoms/TabNavigator';
 
-interface AppProps {
-  pippo?: string;
-}
+interface AppProps {}
 
 const App: React.FC<AppProps> = () => {
   return (
-    <View>
-      <Text> NV2 </Text>
-    </View>
+    <>
+      <Header />
+      <TabNavigator />
+    </>
   );
 };
 
